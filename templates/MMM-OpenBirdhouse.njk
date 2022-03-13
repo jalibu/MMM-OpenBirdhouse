@@ -1,0 +1,6 @@
+{% if gallery.contents.length > 0 %}
+  <div class="normal medium birdhouse-wrapper">
+     <img src="{{  gallery.contents[0].imageUrl  }}" class="open-birdhouse-img"/>
+     <div class="small">{{ moment(gallery.contents[0].date).format('DD.MM.YYYY HH:mm') }}</div>
+  </div>
+{% endif %}
